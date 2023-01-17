@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rhymes Videos</title>
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="myFunction()" >
+<div id="loader"></div>
+	<div style="display:none; margin: 0" id="myDiv">
+<!-- main window -->
+
+
+<div class="container-fluid" id="mainWindow">
+	<h2 class="text-center pt-1">
+		<span class="border-bottom border-5 py-1 border-danger">Rhymes</span>
+	</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 py-3">
+				<h3 class="text-center">English</h3>
+						<ol>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hotCrossBuns">
+									Hot Cross Buns
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#iLoveMySchool">
+									I Love My School
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#theItsyBitsySpider">
+									The Itsy-Bitsy Spider
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#shapeSong">
+									Shape Song
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#stampYourFeet">
+									Stamp Your Feet
+								</button>
+							</li>
+						<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#littlePumpkin">
+									Little Pumpkin
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#thisIsTheWay">
+									This is the way
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modaysChildIsFair">
+									Monday's Child Is Fair
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#heDiddleDiddle">
+									He Diddle Diddle
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#trafficLightSong">
+									Traffic Light Song
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#londonBridge">
+									London Bridge
+								</button>
+							</li>
+						</ol>
+			</div>
+			<div class="col-lg-6 py-3">
+				<h3 class="text-center">हिन्दी</h3>
+						<ol>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#chintu">
+									चिंटू 
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#maa">
+									माँ 	
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#billiMosi">
+									बिल्ली मौसी 
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#mummyKiMummyHoTum">
+									मम्मी की मम्मी हो तम  
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#rail">
+									रेल 
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#laalPeeliMotor">
+									लाल - पीली मोटर 
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#chuhiyaRani">
+									चुहिया रानी 
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hathiAaya">
+									हाथी आया 
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#sadak">
+									सड़क 
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#navHamari">
+									नाव हमारी 
+								</button>
+							</li>
+							<li class="mb-2">
+								<button style="width:100%;"  class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ekDalParBaithaBndr">
+									एक डाल पर बैठा बन्दर  
+								</button>
+							</li>
+						</ol>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- modal 1 -->
+<div class="modal fade" id="hotCrossBuns" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hot Cross Buns</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/hot-cross-buns.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal 2 -->
+<div class="modal fade" id="iLoveMySchool" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">I Love My School</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/ilovemyschool.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 3 -->
+<div class="modal fade" id="stampYourFeet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Stamp Your Feet</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/stamp-your-feet.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 4 -->
+<div class="modal fade" id="theItsyBitsySpider" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Itsy-Bitsy Spider</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/the-itsy-bitsy-spider.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal 5 -->
+<div class="modal fade" id="shapeSong" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">	Shape Song</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/shape-song.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal 6-->
+<div class="modal fade" id="littlePumpkin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Little Pumpkin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/little-pumpkin.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal 7 -->
+<div class="modal fade" id="thisIsTheWay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">This is the way!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/this-is-the-way.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal 8-->
+<div class="modal fade" id="modaysChildIsFair" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Monday's Child is Fair</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/mondays-child.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal 9 -->
+<div class="modal fade" id="heDiddleDiddle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">He Diddle Diddle</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/he-diddle-diddle.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal 10-->
+<div class="modal fade" id="trafficLightSong" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Traffic Light Song</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/traffic-light-song.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 11-->
+<div class="modal fade" id="londonBridge" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="londonBridge">London Bridge</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/london-bridge.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 12-->
+<div class="modal fade" id="chintu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">चिंटू</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/chintu.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 13-->
+<div class="modal fade" id="maa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">माँ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/maa.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 13-->
+<div class="modal fade" id="billiMosi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="billiMosi">बिल्ली मौसी </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/billi-mosi.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal 14-->
+<div class="modal fade" id="mummyKiMummyHoTum" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mummyKiMummyHoTum">मम्मी की मम्मी हो तम</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/mummy-ki-mummy-ho-tum.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 15-->
+<div class="modal fade" id="rail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rail">रेल</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/rail.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 15-->
+<div class="modal fade" id="laalPeeliMotor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="laalPeeliMotor">लाल - पीली मोटर</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/laal-peeli-motor.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 16-->
+<div class="modal fade" id="chuhiyaRani" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="chuhiyaRani">चुहिया रानी</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/chuhiya-rani.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 17-->
+<div class="modal fade" id="hathiAaya" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hathiAaya">हाथी आया </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/hathi-aaya.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 17-->
+<div class="modal fade" id="sadak" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sadak">सड़क</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/sadak.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal 18-->
+<div class="modal fade" id="navHamari" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="navHamari">नाव हमारी</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/nav-hamari.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 18-->
+<div class="modal fade" id="ekDalParBaithaBndr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ekDalParBaithaBndr">एक डाल पर बैठा बन्दर  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+				<video width="95%" height="95%" controls>
+				  <source src="./assets/video/ek-dal-par-baitha-bandar.mp4" type="video/mp4">
+				</video> 
+      </div>
+    </div>
+  </div>
+</div>
+
+	</div>
+<img src="./assets/img/logo.png" alt="" width="150px;"  id="logo">
+<script>
+	var myVar;
+
+	function myFunction() {
+	  myVar = setTimeout(showPage, 2000);
+	}
+
+	function showPage() {
+	  document.getElementById("loader").style.display = "none";
+	  document.getElementById("myDiv").style.display = "block";
+	}
+</script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
