@@ -26,7 +26,7 @@ loginBtn.addEventListener('click', function(e){
 	if(username.value === user.username){
 		if(password.value === user.password ){
 			// console.log('login success')
-			window.location = './assets/index.html'
+			window.location = './assets/class.html'
 		}else{
 			alert('Incorrect password!')
 		}

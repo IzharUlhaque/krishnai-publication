@@ -7,11 +7,7 @@
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
-<body onload="myFunction()" >
-<div id="loader"></div>
-	<div style="display:none; margin: 0" id="myDiv">
-<!-- main window -->
-
+<body>
 
 <div class="container-fluid" id="mainWindow">
 	<h2 class="text-center pt-1">
@@ -140,14 +136,6 @@
 						</ol>
 			</div>
 		</div>
-	</div>
-</div>
-
-
-
-
-
-
 
 <!-- modal 1 -->
 <div class="modal fade" id="hotCrossBuns" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -530,18 +518,6 @@
 
 	</div>
 <img src="./img/logo.png" alt="" width="150px;"  id="logo">
-<script>
-	var myVar;
-
-	function myFunction() {
-	  myVar = setTimeout(showPage, 2000);
-	}
-
-	function showPage() {
-	  document.getElementById("loader").style.display = "none";
-	  document.getElementById("myDiv").style.display = "block";
-	}
-</script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
